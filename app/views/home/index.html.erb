@@ -1,0 +1,45 @@
+<div class="container-fluid my-5">
+  <div class="row text-center p-4 pb-0 pe-lg-0 py-lg-3 align-items-center border shadow-lg">
+    <div class="col">
+      <img src="<%=asset_path('logopic.jpg')%>" style= "width: 300px; height: 300px; border-radius: 50%;">
+       <h2 class="my-3">Web Developer</h2>
+       <p class="fs-5">Once you replace negative thoughts with positive ones, you'll start having positive results
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid my-5 border " style="background-color: rgba(255,99,98,255);">
+  <div class="row text-center p-4 pb-0 pe-lg-0 py-lg-3 align-items-center ">
+    <div class="col">
+       <p class="fs-1 text-white">Hii, I'M Sourav Rajput A Web Developer From Delhi, India!</p>
+       <hr class="featurette-divider mx-5 text-light">
+          <div class="container my-5 rounded-3 border shadow-lg" style="background-color: white;">
+            <div class="row text-center p-4 pb-0 pe-lg-0 py-lg-3 align-items-center">
+                <div class="container marketing my-3">
+                  <div class="row text-center">
+                    <div class="col-lg-4 my-5">
+                        <img src="<%= asset_path('about_logo.png')%>" class="bd-placeholder-img", style= "width: 180px; height: 180px;" >
+                      <h2 class="my-3 text-dark">About Me</h2>
+                      <%= link_to "View »", home_about_path, class: "btn btn-outline text-white fs-5 d-grid gap-2 d-md-block",style:"background-color: rgba(255,99,98,255);" %>
+                    </div>
+                    <div class="col-lg-4 my-5">
+                        <img src="<%= asset_path('skill_logo2.png')%>" class="bd-placeholder-img ", style= "width: 180px; height: 180px;" >
+                      <h2 class="my-3 text-dark">My Skills</h2>
+                      <%= link_to "View »", skills_path, class: "btn btn-outline text-white fs-5 d-grid gap-2 d-md-block",style:"background-color: rgba(255,99,98,255);" %>
+                    </div>
+                    <div class="col-lg-4 my-5">
+                        <img src="<%= asset_path('project_logo.png')%>" class="bd-placeholder-img", style= "width: 180px; height: 180px;" >
+                      <h2 class="my-3 text-dark">Projects</h2>
+                      <%= link_to "View »", projects_path, class: "btn btn-outline text-white fs-5 d-grid gap-2 d-md-block",style:"background-color: rgba(255,99,98,255);" %>
+                    </div><!-- /.col-lg-4 --> 
+                  </div>
+                </div>
+            </div>
+          </div>
+      <hr class="featurette-divider mx-5 text-light my-5">     
+    </div>
+  </div>
+</div>
+
+
