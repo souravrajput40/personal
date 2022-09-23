@@ -20,7 +20,7 @@
        	 	<p class="lead"><%= @project.about %></p>
       	</div>
       	<div class="col-lg-4 offset-lg-1 p-0 oprojectow-hidden ">
-         		<%= image_tag @project.image_url,alt: "image", class:"bd-placeholder-img", style: "width: 50%;" %>
+         		<%= image_tag @project&.image_url,alt: "image", class:"bd-placeholder-img", style: "width: 50%;" %>
       	</div>
     </div>
 </div>  

@@ -21,9 +21,7 @@
           <p class="lead"><%= @social_handle.profile_url %></p>
                   </div>
         <div class="col-lg-4 offset-lg-1 p-0 oprojectow-hidden ">
-            <% if @social_handle.image.attached? %>
-            <%= image_tag @social_handle.image, class:"bd-placeholder-img", style: "width: 50%;" %>
-          <%end%>
+          <%= image_tag(@social_handle&.image_url, alt: "image",class:"bd-placeholder-img", style: "width: 50%;") %>
         </div>
     </div>
 </div>  
