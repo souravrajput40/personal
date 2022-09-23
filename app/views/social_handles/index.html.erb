@@ -28,9 +28,7 @@
           <div class="row text-center">
             <% @social_handles.each do |sh|%>
               <div class="col-lg-4 my-5">
-                <% if sh.image.attached? %>
-                    <%= image_tag sh.image,class:"bd-placeholder-img rounded-circle", style: "width: 180px; height: 180px;" %>
-                  <%end%>
+                <%= image_tag(sh.image_url, alt: "image",class:"bd-placeholder-img rounded-circle", style: "width: 180px; height: 180px;") %>
                 <h2><%= sh.name %></h2>
                 <p><%= truncate(strip_tags(sh.about),length: 120) %></p>
                 <%= link_to "View Profile »", sh.profile_url_was, class: "btn btn-outline d-grid gap-2 d-md-block text-white fs-4",style:"background-color: rgba(255,99,98,255);" %>

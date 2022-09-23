@@ -28,9 +28,7 @@
           <div class="row text-center">
             <% @skills.each do |s|%>
               <div class="col-lg-4 my-5">
-                <% if s.image.attached? %>
-                    <%= image_tag s.image,class:"bd-placeholder-img rounded-circle", style: "width: 180px; height: 180px;" %>
-                  <%end%>
+                  <%= image_tag(s.image_url, alt: "image",class:"bd-placeholder-img rounded-circle", style: "width: 180px; height: 180px;") %>
                 <h2><%= s.name %></h2>
                 <p><%= truncate(strip_tags(s.about),length: 120) %></p>
                 <%= link_to "View »", skill_path(s.id), class: "btn btn-outline d-grid gap-2 d-md-block text-white fs-4",style:"background-color: rgba(255,99,98,255);" %>
