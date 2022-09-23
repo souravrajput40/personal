@@ -1,0 +1,31 @@
+<%= form_with(model: software) do |form| %>
+  <% if software.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(software.errors.count, "error") %> prohibited this software from being saved:</h2>
+
+      <ul>
+        <% software.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :about %>
+    <%= form.text_area :about %>
+  </div>
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.file_field :image %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

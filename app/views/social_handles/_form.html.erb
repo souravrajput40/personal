@@ -1,0 +1,35 @@
+<%= form_with(model: social_handle) do |form| %>
+  <% if social_handle.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(social_handle.errors.count, "error") %> prohibited this social_handle from being saved:</h2>
+
+      <ul>
+        <% social_handle.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :about %>
+    <%= form.text_area :about %>
+  </div>
+
+  <div class="field">
+    <%= form.label :profile_url %>
+    <%= form.text_field :profile_url %>
+  </div>
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.file_field :image %>
+  </div>
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

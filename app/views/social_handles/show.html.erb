@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @social_handle.name %>
+</p>
+
+<p>
+  <strong>About:</strong>
+  <%= @social_handle.about %>
+</p>
+
+<p>
+  <strong>Profile url:</strong>
+  <%= @social_handle.profile_url %>
+</p>
+
+<%= link_to 'Edit', edit_social_handle_path(@social_handle) %> |
+<%= link_to 'Back', social_handles_path %>
