@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :posts
   resources :softwares, only: [:index, :show]
   resources :social_handles, only: [:index, :show]
   resources :skills, only: [:index, :show]
