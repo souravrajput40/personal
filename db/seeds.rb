@@ -14,10 +14,10 @@ Project.create!(name: 'Ginni Biz',
   image_url: 'ginnibiz.png')
 
 Project.create!(name: 'Portfolio',
-  image_url: 'portfolio2.png')
+  image_url: 'portfolio3.png')
 
 Project.create!(name: 'My WebSite',
-  image_url: 'portfolio3.png')
+  image_url: 'portfolio2.png')
 
 
 
@@ -84,3 +84,4 @@ Software.create!(name: 'Github',
 Software.create!(name: 'Terminal',
 	about: 'A computer terminal is an electronic or electromechanical hardware device that can be used for entering data into, and transcribing data from, a computer or a computing system. The teletype was an example of an early-day hard-copy terminal and predated the use of a computer screen by decades.',
   image_url: 'terminal1.png')
+
