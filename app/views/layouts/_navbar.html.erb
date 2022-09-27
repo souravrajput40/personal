@@ -1,7 +1,7 @@
-<div class="container-fluid bg-white" >
+<!-- <div class="container-fluid bg-white" >
     <header class="d-flex justify-content-center p-3">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <img src="<%=asset_path('logopic.jpg')%>" style= "width: 60px; height: 60px; border-radius: 50%;">
+        <img src="<%#=asset_path('logopic.jpg')%>" style= "width: 60px; height: 60px; border-radius: 50%;">
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
           <li><a href="/" class="nav-link px-3 text-dark fs-4 mx-2 hover">Home</a></li>
           <li><a href="/home/about" class="nav-link px-3 text-dark fs-4 mx-2 hover">About Me</a></li>
@@ -11,4 +11,33 @@
         </ul>
       </div>
     </header>
-</div>
+</div> -->
+<nav class=" container-fluid navbar navbar-expand-lg py-3 my-4 border shadow" style=" border-radius: 12px; width: 97%; background-color: rgba(255,99,98,255);" >
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <a href="<%= root_path %>">
+          <img src="<%=asset_path('logopic.jpg')%>" style= "width: 60px; height: 60px; border-radius: 50%; border: 2px solid white;"">
+        </a>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarsExample08">
+        <ul class="navbar-nav fs-4 fw-bold">
+          <li class="nav-item mx-4">
+            <a class="nav-link text-light" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link text-light" href="/projects">Projects</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link text-light"href="/skills">Skills</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link text-light"href="/home/about">About Me</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link text-light"href="/contacts">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
