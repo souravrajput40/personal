@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :softwares, only: [:index, :show]
   resources :social_handles, only: [:index, :show]
   resources :skills, only: [:index, :show]
-  resources :projects, only: [:index, :show]
+  resources :projects, only: [:index, :show, :edit, :update]
   resources :contacts, only: [:index]
   post 'contacts/send_message'
   get 'home/about'

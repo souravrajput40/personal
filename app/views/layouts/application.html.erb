@@ -12,11 +12,18 @@
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= render "layouts/navbar"%>
-    <%= yield %>
+  <body style="background-color: black;">
+    <header>
+      <%= render "layouts/navbar"%>
+    </header>
+    <section class="d-flex">
+      <%= render "layouts/about_sidebar" %>
+      <main> 
+      <%= yield %>
+      </main>
+    </section>
        <div class="mt-5">
-        <%= render 'layouts/footer' %>
-      </div>
+          <%= render 'layouts/footer' %>
+        </div>
   </body>
 </html>

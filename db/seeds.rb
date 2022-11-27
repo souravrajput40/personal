@@ -85,3 +85,20 @@ Software.create!(name: 'Terminal',
 	about: 'A computer terminal is an electronic or electromechanical hardware device that can be used for entering data into, and transcribing data from, a computer or a computing system. The teletype was an example of an early-day hard-copy terminal and predated the use of a computer screen by decades.',
   image_url: 'terminal1.png')
 
+#Posts
+Post.delete_all
+Post.create!(name: 'Sublime-Text',
+	about: 'Sublime Text is a shareware cross-platform source code editor. It natively supports many programming languages and markup languages. Users can expand its functionality with plugins, typically community-built and maintained under free-software licenses. To facilitate plugins, Sublime Text features a Python API.',
+  image_url: 'sublime.png')
+
+Post.create!(name: 'VS Code',
+	about: 'Visual Studio Code, also commonly referred to as VS Code, is a source-code editor made by Microsoft with the Electron Framework, for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git.',
+  image_url: 'vscode.png')
+
+Post.create!(name: 'Github',
+	about: 'GitHub, Inc., is an Internet hosting service for software development and version control using Git. It provides the distributed version control of Git plus access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project.',
+  image_url: 'git.png')
+
+Post.create!(name: 'Terminal',
+	about: 'A computer terminal is an electronic or electromechanical hardware device that can be used for entering data into, and transcribing data from, a computer or a computing system. The teletype was an example of an early-day hard-copy terminal and predated the use of a computer screen by decades.',
+  image_url: 'terminal1.png')

@@ -1,45 +1,60 @@
-<div class="container-fluid my-5">
-  <div class="row text-center p-4 pb-0 pe-lg-0 py-lg-3 align-items-center border shadow-lg">
-    <div class="col">
-      <img src="<%=asset_path('logopic.jpg')%>" style= "width: 300px; height: 300px; border-radius: 50%;">
-       <h2 class="my-3">Web Developer</h2>
-       <p class="fs-5">Once you replace negative thoughts with positive ones, you'll start having positive results
-        </p>
+<hr class="featurette-divider mx-5 text-light">
+  <p class="fs-1 text-white text-center">Hii, I'M Sourav Rajput A Software Developer From Delhi, India!</p>
+<hr class="featurette-divider mx-5 text-light">
+<div class="container-fluid my-3 rounded-3 shadow-lg bg-dark" style="width: 100%;">
+  <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center">
+    <div class="col-lg-7">
+      <h1 class="display-4 fw-bold lh-1 text-warning">Being A Software Developer</h1>
+      <p class="lead text-white">(It's Amazing how much ground is constantly being broken in this field so constantly learning new concepts and technologies)</p>
+      <p class="text-white">Once you replace negative thoughts with positive ones, you'll start having positive results</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+        <%= link_to "EXPLORE MORE ",home_about_path, class:"btn col-lg-6 text-dark bg-warning fs-5"%>
+      </div>
     </div>
-  </div>
+    <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+        <img src="<%=asset_path('logopic.jpg')%>" style= "width: 100%; height: 500px;">
+    </div>
+  </div>   
 </div>
 
-<div class="container-fluid my-5 border " style="background-color: rgba(255,99,98,255);">
-  <div class="row text-center p-4 pb-0 pe-lg-0 py-lg-3 align-items-center ">
-    <div class="col">
-       <p class="fs-1 text-white">Hii, I'M Sourav Rajput A Web Developer From Delhi, India!</p>
-       <hr class="featurette-divider mx-5 text-light">
-          <div class="container my-5 rounded-3 border shadow-lg" style="background-color: white;">
-            <div class="row text-center p-4 pb-0 pe-lg-0 py-lg-3 align-items-center">
-                <div class="container marketing my-3">
-                  <div class="row text-center">
-                    <div class="col-lg-4 my-5">
-                        <img src="<%= asset_path('about_logo.png')%>" class="bd-placeholder-img", style= "width: 180px; height: 180px;" >
-                      <h2 class="my-3 text-dark">About Me</h2>
-                      <%= link_to "View »", home_about_path, class: "btn btn-outline text-white fs-5 d-grid gap-2 d-md-block",style:"background-color: rgba(255,99,98,255);" %>
-                    </div>
-                    <div class="col-lg-4 my-5">
-                        <img src="<%= asset_path('skill_logo2.png')%>" class="bd-placeholder-img ", style= "width: 180px; height: 180px;" >
-                      <h2 class="my-3 text-dark">My Skills</h2>
-                      <%= link_to "View »", skills_path, class: "btn btn-outline text-white fs-5 d-grid gap-2 d-md-block",style:"background-color: rgba(255,99,98,255);" %>
-                    </div>
-                    <div class="col-lg-4 my-5">
-                        <img src="<%= asset_path('project_logo.png')%>" class="bd-placeholder-img", style= "width: 180px; height: 180px;" >
-                      <h2 class="my-3 text-dark">Projects</h2>
-                      <%= link_to "View »", projects_path, class: "btn btn-outline text-white fs-5 d-grid gap-2 d-md-block",style:"background-color: rgba(255,99,98,255);" %>
-                    </div><!-- /.col-lg-4 --> 
-                  </div>
-                </div>
-            </div>
+<div class="container-fluid my-4" style="width: 99%;">
+  <div class="row">
+    <div class="col-3">
+      <p class="text-warning fs-5 fw-bold">1 Year Experience</p>
+    </div>
+    <div class="col-3">
+      <p class="text-warning fs-5 fw-bold">3 Completed Projects</p>
+    </div>
+    <div class="col-3">
+      <p class="text-warning fs-5 fw-bold">Hard Working</p>
+    </div>
+    <div class="col-3">
+      <p class="text-warning fs-5 fw-bold">Dedicate To Work</p>
+    </div>            
+  </div>   
+</div>  
+
+<h2 class="text-warning">MORE ABOUT ME :</h2>
+<div class="container-fluid my-2 rounded-3 bg-dark">
+  <div class="row text-center p-4 pb-0 pe-lg-0 py-lg-3 align-items-center">
+      <div class="container marketing my-3">
+        <div class="row text-center">
+          <div class="col-lg-4 my-5">
+              <img src="<%= asset_path('group.png')%>" class="bd-placeholder-img ", style= "width: 180px; height: 180px;" >
+            <h2 class="my-3 text-white">About Me</h2>
+            <%= link_to "View »", home_about_path, class: "btn btn-outline text-dark fs-5 d-grid gap-2 d-md-block bg-warning"%>
           </div>
-      <hr class="featurette-divider mx-5 text-light my-5">     
-    </div>
+          <div class="col-lg-4 my-5">
+              <img src="<%= asset_path('skill.png')%>" class="bd-placeholder-img ", style= "width: 180px; height: 180px;" >
+            <h2 class="my-3 text-white">My Skills</h2>
+            <%= link_to "View »", skills_path, class: "btn btn-outline text-dark fs-5 d-grid gap-2 d-md-block bg-warning"%>
+          </div>
+          <div class="col-lg-4 my-5">
+              <img src="<%= asset_path('project.png')%>" class="bd-placeholder-img", style= "width: 180px; height: 180px;" >
+            <h2 class="my-3 text-white">Projects</h2>
+            <%= link_to "View »", projects_path, class: "btn btn-outline text-dark fs-5 d-grid gap-2 d-md-block bg-warning"%>
+          </div> 
+        </div>
+      </div>
   </div>
 </div>
-
-

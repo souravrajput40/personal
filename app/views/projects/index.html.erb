@@ -1,43 +1,43 @@
-<div class="container-fluid my-3 shadow-lg ">
-  <div class="row text-center px-3 align-items-center py-3">
+<hr class="featurette-divider mx-5 text-light">
+<div class="container-fluid">
+  <div class="row text-center px-3 align-items-center">
     <div class="col-2 ">
-      <%= link_to ('<i class="fa fa-arrow-left"></i>').html_safe, root_path, class:"mx-5 text-dark fs-1 align-items-start "%>
+      <%= link_to ('<i class="fa fa-arrow-left"></i>').html_safe, root_path, class:"mx-5 text-warning fs-1 align-items-start "%>
     </div>
     <div class="col-8">
-      <h2 class="text-dark">PROJECTS</h2>
+      <h2 class="text-warning">PROJECTS</h2>
     </div>
     <div class="col-2">
-      <img src="<%=asset_path('project_logo.png')%>" style= "width: 60px; height: 60px;" >
+      <img src="<%=asset_path('project.png')%>" style= "width: 60px; height: 60px; border-radius: 20  %;" >
     </div>
   </div>
 </div>
+<hr class="featurette-divider mx-5 text-light">
 
-<div class="container-fluid my-5 shadow-lg ">
-  <div class="row text-center px-3 align-items-center d-flex justify-content-center">
-    <div class="col-6 ">
-      <p class="lead my-4">If Your Actions Inspire Others To Dream More, Learn More, Do More And Become More, You Are A Leader.</p>
+<div class="container-fluid  shadow-lg ">
+  <div class="row text-center  align-items-center d-flex justify-content-center">
+    <div class="col-6">
+      <p class="lead text-white">If Your Actions Inspire Others To Dream More, Learn More, Do More And Become More, You Are A Leader.</p>
     </div>    
   </div>
 </div>
 
-<div class="container-fluid shadow-lg ">
+<div class="container-fluid bg-dark rounded-3"  style="width: 95%;">
   <div class="row text-center px-3 align-items-center d-flex justify-content-center shadow-lg">
     <div class="col-12 ">
-      <h2 class="py-4 m-2 rounded-3 shadow-sm text-white fs-1"style="background-color: rgba(255,99,98,255);">Name </h2>
       <hr class="featurette-divider mx-5 text-dark">
         <div class="container marketing mb-5">
           <div class="row text-center">
             <% @projects.each do |project|%>
               <div class="col-lg-4 my-5">
                 <%= image_tag(project&.image_url, alt: "image", class:"bd-placeholder-img ", style: "width: 250px; height: 180px;")%>
-                <h2 class="my-3"><%= project.name %></h2>
-                <p><%= truncate(strip_tags(project.about),length: 120) %></p>
-                <%= link_to "View »", project_path(project.id), class: "btn btn-outline d-grid gap-2 d-md-block text-white fs-4",style:"background-color: rgba(255,99,98,255);" %>
+                <h2 class="my-3 text-warning"><%= project.name %></h2>
+                <p class="text-white"><%= truncate(strip_tags(project.about),length: 120) %></p>
+                <%= link_to "View »", project_path(project.id), class: "btn btn-outline d-grid gap-2 d-md-block text-dark bg-warning fs-4" %>
               </div>
             <%end%>
           </div>
         </div>
-      <hr class="featurette-divider mx-5 text-light">
     </div>    
   </div>
 </div>

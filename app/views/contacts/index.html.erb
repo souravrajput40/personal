@@ -1,12 +1,20 @@
-<div class="container-fluid my-3 shadow-lg bg-light ">
-  <div class="row text-center px-3 align-items-center py-3">
+<hr class="featurette-divider mx-5 text-light">
+<div class="container-fluid">
+  <div class="row text-center px-3 align-items-center">
     <div class="col-2 ">
-      <%= link_to ('<i class="fa fa-arrow-left"></i>').html_safe, root_path, class:"mx-5 text-dark fs-1 align-items-start "%>
+      <%= link_to ('<i class="fa fa-arrow-left"></i>').html_safe, root_path, class:"mx-5 text-warning fs-1 align-items-start "%>
     </div>
     <div class="col-8">
-      <h2 class="text-dark fs-1">CONTACT</h2>
-      <p class="text-dark">(Feel free to get in touch with me. I am always open to Discussing New Projects, Creative ideas or opportunities to be part of your Visions.)</p>
+      <h2 class="text-warning">CONTACT</h2>
     </div>
+  </div>
+</div>
+<hr class="featurette-divider mx-5 text-light">
+
+
+<div class="container-fluid my-3">
+  <div class="row text-center px-3 align-items-center">
+      <p class="text-white fs-5">(Feel free to get in touch with me. I am always open to Discussing New Projects, Creative ideas or opportunities to be part of your Visions.)</p>
   </div>
 </div>
 
@@ -18,38 +26,40 @@
   <div id="fail-mail-alert" class="alert alert-danger container text-center" style="display: none;" role="alert">
           Some Error Occured!
   </div> 
-<hr class="featurette-divider mx-5 mt-5 text-dark"> 
-  <div class="container tools-technology my-4 ">
+<hr class="featurette-divider mx-5 text-dark"> 
+  <div class="d-flex">
+  <div class="container tools-technology my-4 bg-dark ">
     <div class="row">
       <div class="col-md-4 col-lg-4 contact-left">
         <ul>
-          <li>
-            <span><div><i class="fa fa-home"></i></div><p>ADDRESS</p></span>
-              <p>Uttam Nagar,New Delhi,110046,India</p>
+          <li class="text-warning">
+            <span><div><i class="fa fa-home text-warning"></i></div><p class="text-white">ADDRESS</p></span>
+              <p class="text-warning">Uttam Nagar,New Delhi,110046,India</p>
           </li>
-          <li>
-            <span><div><i class="fa fa-envelope-open"></i></div><p>MAIL ME</p></span>
-            <p><a href="mailto:vishwani123patlan@gmail.com">souravrajput14071998@gmail.com</a></p>
+          <li class="text-warning">
+            <span><div><i class="fa fa-envelope-open text-warning"></i></div><p class="text-white ">MAIL ME</p></span>
+            <p><a href="mailto:souravrajput14071998@gmail.com"  class="text-warning text-decoration-none">souravrajput14071998@gmail.com</a></p>
           </li>
-          <li>
-            <span><div><i class="fa fa-phone-square-alt"></i></div><p>CALL ME</p></span>
-            <p>+91-8800109435</p>
+          <li class="text-warning">
+            <span><div><i class="fa fa-phone-square-alt text-warning"></i></div><p class="text-white">CALL ME</p></span>
+            <p class="text-warning">+91-8800109435</p>
           </li>
-          <li>
+          <li class="text-white">
             <h6>FOLLOW ME</h6>
             <div class="social-media text-dark">
-              <a href="https://www.instagram.com/rajput_40/?igshid=YmMyMTA2M2Y%3D"><i class="fa fa-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/sourav-rajput-b6aa3b235/"><i class="fa fa-linkedin"></i></a>
-              <a href="https://github.com/souravrajput40"><i class="fa fa-github"></i></a>
+              <a href="https://www.instagram.com/rajput_40/?igshid=YmMyMTA2M2Y%3D" class="text-warning"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/sourav-rajput-b6aa3b235/" class="text-warning mx-4"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/souravrajput40" class="text-warning"><i class="fa fa-github"></i></a>
             </div>
           </li>
         </ul>
       </div>
-      <div id="contact-form-section" class="col-md-8 col-lg-8 contact-form border rounded-3 shadow-lg">
-        <h2 class="text-center mt-4 rounded-3 py-3 text-light" style="background-color: rgba(255,99,98,255);">Fill This Form To Contact Me</h2>
+
+      <div id="contact-form-section" class="col-md-8 col-lg-8 contact-form ">
+        <h2 class="text-center mt-4 rounded-3 py-3 text-dark bg-warning">Fill This Form To Contact Me</h2>
         <hr class="featurette-divider mx-5 text-dark">
         <%= render 'contact_form'%>
       </div>
     </div>
   </div>
-<hr class="featurette-divider mx-5 text-dark">
+  </div>

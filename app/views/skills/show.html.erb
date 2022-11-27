@@ -1,20 +1,21 @@
-<div class="container-fluid my-3 shadow-lg" style="background-color: rgba(255,99,98,255);">
+<hr class="featurette-divider mx-5 text-light">
+<div class="container-fluid my-3 shadow-lg">
     <header class="d-flex justify-content-between py-3">
-    	<%= link_to ('<i class="fa fa-arrow-left"></i>').html_safe, root_path, class:"mx-5 text-white fs-4 align-items-start "%>
+    	<%= link_to ('<i class="fa fa-arrow-left"></i>').html_safe, root_path, class:"mx-5 text-warning fs-2 align-items-start "%>
       <ul class="nav nav-pills ">
       	<% @skills.each do |s|%>
-        	<li class="nav-item"><%= link_to s.name, skill_path(s.id),class:"btn btn-outline-light mx-3 rounded-pill" %></li>
+        	<li class="nav-item"><%= link_to s.name, skill_path(s.id),class:"btn btn-outline-warning mx-3 rounded-pill" %></li>
         <%end%>	
       </ul>
     </header>
  </div>
+<hr class="featurette-divider mx-5 text-light">
 
-<hr class="featurette-divider mx-5 my-5 text-dark">
-<div class="container my-5">
+<div class="container my-5 bg-dark">
     <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
       	<div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-        	<h1 class="display-4 fw-bold lh-1"><%= @skill.name %></h1>
-       	 	<p class="lead"><%= @skill.about %></p>
+        	<h1 class="display-4 fw-bold lh-1 text-warning"><%= @skill.name %></h1>
+       	 	<p class="lead text-white"><%= @skill.about %></p>
       	</div>
       	<div class="col-lg-4 offset-lg-1 p-0 overflow-hidden ">
           <%= image_tag(@skill&.image_url, alt: "image",class:"bd-placeholder-img", style: "width: 500px; height: 500px;") %>
